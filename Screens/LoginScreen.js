@@ -22,6 +22,11 @@ const LoginScreen = ({navigation}) => {
                             action={StackActions.replace('SignUp')}
                         >Create an account</Link>
                     </Text>
+                    <Text> 
+                        <Link to='/passwordReset'
+                            action={StackActions.replace('PasswordReset')}
+                        >Forgot password?</Link>
+                    </Text>
                 </View>
                 
             </View>

@@ -6,6 +6,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import LoginScreen from './Screens/LoginScreen';
 import SignUpScreen from './Screens/SignUpScreen';
 import DashboardScreen from './Screens/DashboardScreen';
+import PasswordReset from './Screens/PasswordReset';
+import NewPasswordScreen from './Screens/NewPasswordScreen';
 
 
 const Stack = createStackNavigator();
@@ -13,14 +15,16 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='SignUp'>
+      <Stack.Navigator style={styles.container} >
+              {/* <Stack.Navigator initialRouteName='SignUp'> */}
       {/* <View style={styles.container}>
         <Text>Open the shit</Text>
         <StatusBar style="auto" />
       </View> */}
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="SignUp" component={SignUpScreen} />
-        
+        <Stack.Screen name="PasswordReset" component={PasswordReset} />
+        <Stack.Screen name="NewPassword" component={NewPasswordScreen} />
         <Stack.Screen name="Dashboard" component={DashboardScreen} />
       </Stack.Navigator>
    </NavigationContainer>

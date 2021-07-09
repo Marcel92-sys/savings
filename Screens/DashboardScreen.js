@@ -1,12 +1,18 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Button } from 'react-native'
 
 const DashboardScreen = () => {
     return (
         <View>
             <Text>Welcome User</Text>
             <View style={styles.main}>
-                <View>1</View>
+                <View>
+                    <Text>Account Balance</Text>
+                    <View>
+                        <Button>Add Money</Button>
+                        <Button>Withdrawal</Button>
+                    </View>
+                </View>
                 <View>2</View>
                 <View>3</View>
 

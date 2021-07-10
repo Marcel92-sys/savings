@@ -8,6 +8,7 @@ import SignUpScreen from './Screens/SignUpScreen';
 import DashboardScreen from './Screens/DashboardScreen';
 import PasswordReset from './Screens/PasswordReset';
 import NewPasswordScreen from './Screens/NewPasswordScreen';
+import SavingsScreen from './Screens/SavingsScreen';
 
 
 const Stack = createStackNavigator();
@@ -15,8 +16,8 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator style={styles.container} >
-              {/* <Stack.Navigator initialRouteName='SignUp'> */}
+      <Stack.Navigator  initialRouteName='SignUp' >
+              {/* <Stack.Navigator style={styles.container} initialRouteName='SignUp'> */}
       {/* <View style={styles.container}>
         <Text>Open the shit</Text>
         <StatusBar style="auto" />
@@ -25,6 +26,7 @@ export default function App() {
         <Stack.Screen name="SignUp" component={SignUpScreen} />
         <Stack.Screen name="PasswordReset" component={PasswordReset} />
         <Stack.Screen name="NewPassword" component={NewPasswordScreen} />
+                <Stack.Screen name="Saving" component={SavingsScreen} />
         <Stack.Screen name="Dashboard" component={DashboardScreen} />
       </Stack.Navigator>
    </NavigationContainer>

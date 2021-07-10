@@ -1,7 +1,8 @@
 import React from 'react'
-import { StyleSheet, Text, View, Button } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
 
-const DashboardScreen = () => {
+import { Button, Input } from 'react-native-elements'
+const DashboardScreen = ({navigation}) => {
     return (
         <View>
             <Text>Welcome User</Text>
@@ -9,12 +10,10 @@ const DashboardScreen = () => {
                 <View>
                     <Text>Account Balance</Text>
                     <View>
-                        <Button>Add Money</Button>
+                        <Button onPress={() => navigation.push('Saving')}>Fund Account</Button>
                         <Button>Withdrawal</Button>
                     </View>
                 </View>
-                <View>2</View>
-                <View>3</View>
 
 
             </View>
